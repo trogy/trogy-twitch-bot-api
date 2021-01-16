@@ -1,6 +1,6 @@
 <?php
 //Trogy Twitch Bot API (C) 2019 Marc Anderson
-$api_request = file_get_contents('https://panel.truckers.fm/api/song/current');
+$api_request = file_get_contents('https://beta.radiocloud.pro/api/public/v1/song/currentt');
 $api_response =  "[" . $api_request . "]";
 $array = json_decode($api_request, true);
 $artist = $array["artist"];
